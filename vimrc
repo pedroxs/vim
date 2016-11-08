@@ -36,7 +36,11 @@ colorscheme solarized
 let g:solarized_termtrans=1
 
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
-set clipboard=unnamed
+if !has("unix")
+  set clipboard=unnamed        " Windows
+else  
+  set clipboard=unnamedplus    " Linux
+endif
 
 " Enhance command-line completion
 set wildmenu
