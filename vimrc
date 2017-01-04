@@ -37,9 +37,9 @@ let g:solarized_termtrans=1
 
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
 if !has("unix")
-  set clipboard=unnamed        " Windows
+  set clipboard^=unnamed        " Windows
 else  
-  set clipboard=unnamedplus    " Linux
+  set clipboard^=unnamedplus    " Linux
 endif
 
 " Enhance command-line completion
@@ -100,7 +100,7 @@ set noerrorbells
 " Show the cursor position
 set ruler
 
-"coloca barra de rolagem inferior sempre
+" coloca barra de rolagem inferior sempre
 set guioptions+=b
 
 " Switch wrap off for everything
@@ -112,7 +112,7 @@ set laststatus=2
 " Show the current mode
 set showmode
 
-"Have 3 lines of offset (or buffer) when scrolling
+" Have 3 lines of offset (or buffer) when scrolling
 set scrolloff=3
 
 " Show the filename in the window titlebar
