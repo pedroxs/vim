@@ -6,6 +6,9 @@ set nocompatible
 " \ is the leader default character
 let mapleader=","
 
+" pathogen load
+execute pathogen#infect()
+
 " key maps
 map <F2>	<ESC>:w<CR>
 map <F3>	<ESC>:x<CR>
@@ -92,7 +95,7 @@ set smartcase
 set hlsearch
 
 "Informative status line
-"set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)]
+set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)]\ %{fugitive#statusline()}
 
 " Disable error bells
 set noerrorbells
