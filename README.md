@@ -3,4 +3,4 @@ Installation
 
 Clone repo:
 
-`git clone git@github.com:pedroxs/vim.git "$HOME/.vim"`
+`git clone --recursive git@github.com:pedroxs/vim.git "$HOME/.vim"`
