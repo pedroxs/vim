@@ -18,3 +18,6 @@
 	path = bundle/tabular
 	url = git://github.com/godlygeek/tabular.git
 	branch = master
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = git@github.com:vim-airline/vim-airline.git

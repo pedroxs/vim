@@ -94,13 +94,13 @@ set smartcase
 " Highlight searches
 set hlsearch
 
-"Informative status line
-set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)]\ %{fugitive#statusline()}
+"Informative status line (pointless after adding 'vim-airline' plugin
+set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l,%c/%L\ (%p%%)]\ %{fugitive#statusline()}
 
 " Disable error bells
 set noerrorbells
 
-" Show the cursor position
+" Show the cursor position (does not work toguether with 'statusline')
 set ruler
 
 " coloca barra de rolagem inferior sempre
