@@ -16,6 +16,10 @@ map <F4>	<ESC>:q!<CR>
 map <F5>	<ESC>:e!<CR>
 map <F6>	<ESC>:noh<CR>
 
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+"ca w!! w !sudo tee % > /dev/null
+" with auto reload of vim content
+ca w!! execute 'write !sudo tee % > /dev/null' <bar> edit!
 
 " crazy mapping for terminals
 "set timeout timeoutlen=1000 ttimeoutlen=100
