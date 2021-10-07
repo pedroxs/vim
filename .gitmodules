@@ -21,3 +21,4 @@
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = git@github.com:vim-airline/vim-airline.git
+	branch = master
