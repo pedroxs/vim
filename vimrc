@@ -45,6 +45,8 @@ let g:solarized_termtrans=1
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
 if !has("unix")
   set clipboard^=unnamed        " Windows
+elseif system('uname -s') == "Darwin\n"
+  set clipboard=unnamed         " OSX
 else  
   set clipboard^=unnamedplus    " Linux
 endif
